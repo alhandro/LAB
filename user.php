@@ -33,7 +33,7 @@ class user implements Crud{
 			//$con = $this->con;
 			$con =mysqli_connect('localhost','root','','ics3104');
 			
-			$res=mysqli_query($con, "INSERT INTO users (first_name,last_name,user_city) VALUES('$alpha','$musambi','$city')")or die("Error:".mysqli_error($con));
+			$res=mysqli_query($con, "INSERT INTO users (first_name,last_name,user_city) VALUES('$fn','$ln','$city')")or die("Error:".mysqli_error($con));
 			//return $res;
 			//$res=mysqli_query($this->con->conn, "INSERT INTO users (first_name,last_name,user_city) VALUES('$fn','$ln','$city')")or die("Error:".mysqli_error($this->con->conn));
 
